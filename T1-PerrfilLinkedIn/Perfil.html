@@ -1,192 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Pedro Chávez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Pedro Chávez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
     <nav class="navbar">
-            <a href="#perfil">Perfil</a> 
-            <a href="#horario">Horario</a> 
-            <a href="#proyectos">Proyectos</a> 
-            <a href="#habilidades">Habilidades</a> 
-            <a href="#metas">Metas</a> 
-            <a href="#contacto">Contacto</a>
-        </nav>
-    <section id="perfil">
+        <a href="#perfil">Perfil</a> 
+        <a href="#horario">Horario</a> 
+        <a href="#proyectos">Proyectos</a> 
+        <a href="#habilidades">Habilidades</a> 
+        <a href="#metas">Metas</a> 
+        <a href="#contacto">Contacto</a>
+    </nav>
 
-  <h1>Pedro Abraham Chávez Ortega</h1>
+    <main class="container">
+        
+        <section id="perfil" class="mt-5 pt-5">
+            <h1>Pedro Abraham Chávez Ortega</h1>
+            <div class="row align-items-center mt-4">
+                <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+                    <img src="foto1.jpeg" alt="Pedro" class="foto-perfil img-fluid">
+                </div>
+                <div class="col-12 col-md-8">
+                    <h2>Sobre mi</h2>
+                    <p>Como estudiante de <i>Ingeniería en Desarrollo de Software</i>,
+                    disfruto del proceso de crear y estructurar soluciones digitales.
+                    Poseo conocimientos fundamentales en <b>desarrollo web y programación</b>,
+                    siempre con un enfoque en la calidad y el <b>pensamiento lógico</b>.
+                    Estoy motivado por adquirir experiencia profesional participando en
+                    proyectos que me permitan crecer. Me considero alguien <b>altamente responsable</b>,
+                    con la <b>adaptabilidad</b> necesaria para dominar nuevas herramientas rápidamente
+                    y la convicción de que el mejor software se construye mediante un excelente
+                    <b>trabajo en equipo</b>.</p>
+                </div>
+            </div>
+        </section>
 
-  <div class="perfil-contenido">
-      <img src="foto1.jpeg" alt="Pedro" class="foto-perfil" >
+        <section id="horario" class="mt-5">
+             <h2>Horarios de contacto</h2>
+             <div class="row justify-content-center">
+                 <div class="col-12 table-responsive">
+                     <table>
+                        <caption>Horario</caption>
+                        <thead>
+                            <tr>
+                                <th>Horario</th><th>Lunes</th><th>Martes</th><th>Miercoles</th><th>Jueves</th><th>Viernes</th><th>Sabado</th><th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7-9</td><td class="no-disponible">No disponible</td><td class="no-disponible">No disponible</td><td rowspan="4" class="disponible">Disponible</td><td class="no-disponible">No disponible</td><td class="no-disponible">No disponible</td><td rowspan="8" class="no-disponible">No disponible</td><td rowspan="8" class="no-disponible">No disponible</td>
+                            </tr>
+                            <tr><td>9-11</td><td rowspan="3" class="disponible">Disponible</td><td class="disponible">Disponible</td><td class="disponible">Disponible</td><td rowspan="2" class="disponible">Disponible</td></tr>
+                            <tr><td>11-13</td><td rowspan="2" class="no-disponible">No disponible</td><td rowspan="2" class="no-disponible">No disponible</td></tr>
+                            <tr><td>13-15</td><td class="no-disponible">No disponible</td></tr>
+                            <tr><td>15-16</td><td colspan="5" align="center">Horario de comida</td></tr>
+                            <tr><td>16-18</td><td class="disponible">Disponible</td><td class="disponible">Disponible</td><td class="disponible">Disponible</td><td class="disponible">Disponible</td><td class="disponible">Disponible</td></tr>
+                            <tr><td>18-20</td><td rowspan="2" class="no-disponible">No disponible</td><td rowspan="2" class="no-disponible">No disponible</td><td rowspan="2" class="no-disponible">No disponible</td><td rowspan="2" class="no-disponible">No disponible</td><td rowspan="2" class="no-disponible">No disponible</td></tr>
+                            <tr><td>20-22</td></tr>
+                        </tbody>
+                     </table>
+                 </div>
+             </div>
+        </section> 
 
-      <div class="texto-perfil">
-          <h2>Sobre mi</h2>
-          <p>Como estudiante de <i>Ingeniería en Desarrollo de Software</i>,
-            disfruto del proceso de crear y estructurar soluciones digitales.
-            Poseo conocimientos fundamentales en <b>desarrollo web y programación</b>,
-            siempre con un enfoque en la calidad y el <b>pensamiento lógico</b>.
-            Estoy motivado por adquirir experiencia profesional participando en
-            proyectos que me permitan crecer. Me considero alguien <b>altamente responsable</b>,
-            con la <b>adaptabilidad</b> necesaria para dominar nuevas herramientas rápidamente
-            y la convicción de que el mejor software se construye mediante un excelente
-        <b>trabajo en equipo</b>.</p>
-    </section>
-    <section id="horario">
-         <h2>Horarios de contacto</h2>
-         <table>
-            <caption>Horario</caption>
-            <thead>
-                <tr>
-                    <th>Horario</th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miercoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                    <th>Sabado</th>
-                    <th>Domingo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>7-9</td>
-                    <td class="no-disponible">No disponible</td>
-                    <td class="no-disponible">No disponible</td>
-                    <td rowspan="4" class="disponible">Disponible</td>
-                    <td class="no-disponible">No disponible</td>
-                    <td class="no-disponible">No disponible</td>
-                    <td rowspan="8" class="no-disponible">No disponible</td>
-                    <td rowspan="8" class="no-disponible">No disponible</td>
-                </tr>
-                <tr>
-                    <td>9-11</td>
-                    <td rowspan="3" class="disponible">Disponible</td>
-                    <td class="disponible">Disponible</td>
-                    <td class="disponible">Disponible</td>
-                    <td rowspan="2" class="disponible">Disponible</td>
-                </tr>
-                <tr>
-                    <td>11-13</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                </tr>
-                <tr>
-                    <td>13-15</td>
-                    <td class="no-disponible">No disponible</td>
-                </tr>
-                <tr>
-                    <td>15-16</td>
-                    <td colspan="5" align="center">Horario de comida</td>
-                </tr>
-                <tr>
-                    <td>16-18</td>
-                    <td class="disponible">Disponible</td>
-                    <td class="disponible">Disponible</td>
-                    <td class="disponible">Disponible</td>
-                    <td class="disponible">Disponible</td>
-                    <td class="disponible">Disponible</td>
-                </tr>
-                <tr>
-                    <td>18-20</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                    <td rowspan="2" class="no-disponible">No disponible</td>
-                </tr>
-                <tr>
-                    <td>20-22</td>
-                </tr>
-            </tbody>
-         </table>
-    </section> 
-    <section id="proyectos">
-    <h2>Proyectos</h2>
-    <p><u>Sistema de gestion de inventarios</u><br>
-    Desarrollo de un sistema en C para gestionar un inventario de
-    una tienda, se utilizan estructuras y funciones para agregar,
-    eliminar, buscar y generar reportes de productos.<br><br>
-    <u>Juego Snake </u><br>
-    Desarrollo del juego de Snake en C para correr en simulador Risc-V,
-    implementando lógica de movimiento, detección de colisiones
-    y control de la serpiente.<br><br>
-    <u>Data Imputation Tool</u><br>
-    Desarrollo de una herramienta en Java para la imputación de
-    datos faltantes mediante reconocimiento de patrones,
-    promedios y modas.
-    </p>
-    </section>
-    <section id="habilidades">
-    <h2>Habilidades</h2>
-    <p><u>Hard Skills</u></p>
-    <ul>
-        <li>Python</li>
-        <li>Java</li>
-        <li>C</li>
-        <li>Git/Github</li>
-        <li>Arduino</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>WordPress</li>
-    </ul>
-    <p><u>Soft Skills</u></p>
-    <ul>
-        <li>Liderazgo</li>
-        <li>Trabajo en equipo</li>
-        <li>Toma de decisiones bajo presión</li>
-        <li>Resolución de problemas</li>
-        <li>Pensamiento analítico</li>
-        <li>Aprendizaje autónomo</li>
-    </ul>
-    </section>
-    <section id="metas"> 
-    <h2>Metas Profesionales</h2>
-    <ol>
-        <li>Empleo remoto</li>
-        <li>Ambiente laboral sano</li>
-        <li>Participar en proyectos tecnológicos importantes</li>
-    </ol>
-    </section>
-    <section id="contacto">
-            <h2>Formulario de Contacto</h2>
+        <section id="proyectos" class="mt-5">
+            <h2>Proyectos</h2>
+            <div class="row">
+                <div class="col-12">
+                    <p><u>Sistema de gestion de inventarios</u><br> <p>Desarrollo de un sistema en C para gestionar un inventario de una tienda,
+                         se utilizan estructuras y funciones para agregar,eliminar, buscar y generar reportes de productos.</p></p>
+                    <p><u>Juego Snake </u><br><p>Desarrollo del juego de Snake en C para correr en simulador Risc-V,
+                        implementando lógica de movimiento, detección de colisionesy control de la serpiente.</p></p>
+                    <p><u>Data Imputation Tool</u><br><p>Desarrollo de una herramienta en Java para la imputación de 
+                        datos faltantes mediante reconocimiento de patrones,promedios y modas. </p></p>
+                </div>
+            </div>
+        </section>
 
-            <form>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre"><br><br>
+        <section id="habilidades" class="mt-5">
+            <h2>Habilidades</h2>
+            <div class="row mt-4">
+                <div class="col-12 col-md-6">
+                    <p><u>Hard Skills</u></p>
+                    <ul>
+                        <li>Python</li><li>Java</li><li>C</li><li>Git/Github</li><li>Arduino</li><li>HTML</li><li>CSS</li><li>WordPress</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p><u>Soft Skills</u></p>
+                    <ul>
+                        <li>Liderazgo</li><li>Trabajo en equipo</li><li>Toma de decisiones bajo presión</li><li>Resolución de problemas</li><li>Pensamiento analítico</li><li>Aprendizaje autónomo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-                <label for="correo">Correo electrónico:</label><br>
-                <input type="email" id="correo" name="correo"><br><br>
+        <section id="metas" class="mt-5"> 
+            <h2>Metas Profesionales</h2>
+            <div class="row">
+                <div class="col-12">
+                    <ol>
+                        <li>Empleo remoto</li>
+                        <li>Ambiente laboral sano</li>
+                        <li>Participar en proyectos tecnológicos importantes</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
-                <label for="fecha">Fecha:</label><br>
-                <input type="date" id="fecha" name="fecha"><br><br>
-
-                <label for="color">Color favorito:</label><br>
-                <input type="color" id="color" name="color"><br><br>
-
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
-
-                <button type="submit">Enviar</button>
-            </form>
+        <section id="contacto" class="mt-5 mb-5">
+            <h2>Formulario y Contacto</h2>
+            <div class="row mt-4">
+                <div class="col-12 col-md-8 mx-auto">
+                    <form>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre"><br><br>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo"><br><br>
+                        <label for="fecha">Fecha:</label><br>
+                        <input type="date" id="fecha" name="fecha"><br><br>
+                        <label for="color">Color favorito:</label><br>
+                        <input type="color" id="color" name="color"><br><br>
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row mt-4 text-center">
+                <div class="col-12">
+                    <img src="linkedin.png" height="25" width="25" alt="LinkedIn Logo"> <a href="https://www.linkedin.com/in/pedro-chavez-">LinkedIn</a><br>
+                    <img src="facebook.png" height="25" width="25" alt="Facebook logo"> <a href="//www.facebook.com/pedro.abraham.77">Facebook</a><br>
+                    <img src="Instagram.png" height="25" width="25" alt="Instagram logo"> <a href="//www.instagram.com/pedro.chvo/">Instagram</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-        <section id="contacto">
-        <h2>Contacto</h2>
-        <img src="linkedin.png "height="25" width="25" alt="LinkedIn Logo"><a href="https://www.linkedin.com/in/pedro-chavez-">LinkedIn</a><br>
-        <img src="facebook.png" height="25" width="25" alt="Facebook logo"><a href="//www.facebook.com/pedro.abraham.77">Facebook</a><br>
-        <img src="Instagram.png" height="25" width="25" alt="Instagram logo"><a href="//www.instagram.com/pedro.chvo/">Instagram</a><br>
-        <br>
-        <br>
-    </section>
+    <footer class="text-center pb-4">
+        <a href="#perfil">Volver al inicio</a>
+        <p>© 2026 Pedro Chávez</p>
+    </footer>
 
-<a href="#perfil">Volver al inicio</a>
-<p>© 2026 Pedro Chávez</p>
-        
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
