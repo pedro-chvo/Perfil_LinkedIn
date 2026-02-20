@@ -44,7 +44,7 @@
              <h2>Horarios de contacto</h2>
              <div class="row justify-content-center">
                  <div class="col-12 table-responsive">
-                     <table>
+                     <table >
                         <caption>Horario</caption>
                         <thead>
                             <tr>
@@ -69,16 +69,36 @@
         </section> 
 
         <section id="proyectos" class="mt-5">
-            <h2>Proyectos</h2>
-            <div class="row">
-                <div class="col-12">
-                    <p><u>Sistema de gestion de inventarios</u><br> <p>Desarrollo de un sistema en C para gestionar un inventario de una tienda,
-                         se utilizan estructuras y funciones para agregar,eliminar, buscar y generar reportes de productos.</p></p>
-                    <p><u>Juego Snake </u><br><p>Desarrollo del juego de Snake en C para correr en simulador Risc-V,
-                        implementando lógica de movimiento, detección de colisionesy control de la serpiente.</p></p>
-                    <p><u>Data Imputation Tool</u><br><p>Desarrollo de una herramienta en Java para la imputación de 
-                        datos faltantes mediante reconocimiento de patrones,promedios y modas. </p></p>
+            <h2 class="mb-4">Proyectos</h2>
+            <div class="row g-4">
+                
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sistema de gestión de inventarios</h5>
+                            <p class="card-text">Desarrollo de un sistema en C para gestionar un inventario de una tienda, se utilizan estructuras y funciones para agregar, eliminar, buscar y generar reportes de productos.</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Juego Snake</h5>
+                            <p class="card-text">Desarrollo del juego de Snake en C para correr en simulador Risc-V, implementando lógica de movimiento, detección de colisiones y control de la serpiente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Data Imputation Tool</h5>
+                            <p class="card-text">Desarrollo de una herramienta en Java para la imputación de datos faltantes mediante reconocimiento de patrones, promedios y modas.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -117,18 +137,28 @@
             <h2>Formulario y Contacto</h2>
             <div class="row mt-4">
                 <div class="col-12 col-md-8 mx-auto">
-                    <form>
-                        <label for="nombre">Nombre:</label><br>
-                        <input type="text" id="nombre" name="nombre"><br><br>
-                        <label for="correo">Correo electrónico:</label><br>
-                        <input type="email" id="correo" name="correo"><br><br>
-                        <label for="fecha">Fecha:</label><br>
-                        <input type="date" id="fecha" name="fecha"><br><br>
-                        <label for="color">Color favorito:</label><br>
-                        <input type="color" id="color" name="color"><br><br>
-                        <label for="mensaje">Mensaje:</label><br>
-                        <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
-                        <button type="submit">Enviar</button>
+                    <form class="p-4 border rounded shadow-sm bg-white">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-bold">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-bold">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correo" name="correo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label fw-bold">Fecha:</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="color" class="form-label fw-bold">Color favorito:</label>
+                            <input type="color" class="form-control form-control-color" id="color" name="color">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-bold">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Enviar</button>
                     </form>
                 </div>
             </div>
