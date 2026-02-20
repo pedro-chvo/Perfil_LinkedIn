@@ -97,11 +97,12 @@ section{
 table {
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 0 auto;
     border-collapse: collapse;
     background-color: #f5f4f4;
     border-radius: 12px;
     overflow: hidden;
+    font-size: 14px;
 }
 th {
     background-color: #111827;
